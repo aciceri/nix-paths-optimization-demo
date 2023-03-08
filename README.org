@@ -1,0 +1,4 @@
+#+begin_src sh
+nix path-info -r $(nix build .#a --print-out-paths --no-link)
+nix path-info -r $(nix build .#b --print-out-paths --no-link)
+#+end_src
